@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* Default styles for all screens */
+body {
+  font-size: 16px;
+}
+
+/* Styles for screens smaller than 800px wide */
+@media (max-width: 800px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Styles for screens smaller than 600px wide */
+@media (max-width: 600px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  table {
+    width: 50%;
+    max-width: 300px;
+  }
+}
+
+h2 {
+  padding: 10px;
+  margin: 50px 0px 20px 0px;
+}
+
+body {
+  background-color: #e4ece8;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li,
+a,
+button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgb(95, 88, 88);
+  text-decoration: none;
+}
+
+.topheader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topheader img {
+  width: 50px;
+  height: 50px;
+  margin: 0px 30px 0px 30px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  padding: 30px 10%;
+  margin: 20px 0px 30px 0px;
+  background-color: #3fe3b7;
+  filter: drop-shadow(0px 4px 6px rgb(133, 132, 132));
+}
+
+.nav__links li {
+  display: inline-block;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+  padding: 20px;
+  color: rgb(95, 88, 88);
+  font-size: 18px;
+}
+
+.nav__links li a:hover {
+  color: #ffffff;
+}
+
+.nav__links li:first-child a {
+  color: #fff;
+}
+
+.nav__links li:first-child a:hover {
+  color: #000;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  width: 600px;
+}
+
+th {
+  text-align: left;
+}
+
+table,
+th,
+td {
+  border: 1px solid #000;
+  border-collapse: collapse;
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  align-items: center;
+  background-color: #fff !important;
+}
+
+caption {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  padding: 0px 0px 15px 0px;
+}
+
+.sp-items-table {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.character-sp-items {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-bar input {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.top-row-characters {
+  background-color: #fff;
+}
+
+/* This is for the Outbreak SP item page */
+
+.items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 100px;
+}
+
+.items p {
+  padding: 10px;
+  margin: 0px 20px 0px 20px;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.item-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(
+    4,
+    1fr
+  ); /* 4 columns, each with a fraction of the available space */
+}
+
+.grid p {
+  margin: 16px; /* remove the default margin from paragraphs */
+}
+
+/* Add a class to each paragraph to give it a label */
+
+.item-name {
+  grid-column: 1;
+}
+.difficulty {
+  grid-column: 2;
+}
+.location {
+  grid-column: 3;
+}
+.description {
+  grid-column: 4;
+}
+
+/* Checkbox styling */
+
+input {
+  margin: 0px 0px 0px 20px;
+  height: 25px;
+  width: 25px;
+}
